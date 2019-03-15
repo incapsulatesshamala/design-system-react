@@ -254,7 +254,7 @@ var MenuPicklist = (0, _createReactClass2.default)({
     return {
       focusedIndex: this.props.initValueIndex ? this.props.initValueIndex : -1,
       selectedIndex: this.props.initValueIndex ? this.props.initValueIndex : -1,
-      selectedIndices: !!this.props.selectedIndices.length ? this.props.selectedIndices : [],
+      selectedIndices: !!(this.props.selectedIndices || []).length ? this.props.selectedIndices : [],
       currentPillLabel: ''
     };
   },
