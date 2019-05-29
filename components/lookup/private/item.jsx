@@ -62,7 +62,7 @@ class Item extends React.Component {
 		let label;
 		if (this.props.children.data.subTitle) {
 			label = (
-				<div className="slds-media__body">
+				<div className="slds-media__body" title={this.props.children.label}>
 					<div className="slds-lookup__result-text">
 						{this.props.children.label}
 					</div>
@@ -77,7 +77,7 @@ class Item extends React.Component {
 			});
 
 			label = (
-				<div className="slds-media__body">
+				<div className="slds-media__body" title={this.props.children.label}>
 					<div className={labelClassName}>{this.props.children.label}</div>
 				</div>
 			);

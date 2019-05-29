@@ -699,6 +699,7 @@ const Lookup = class extends React.Component {
 						this.pills[this.state.selectedIndex] = pill;
 					}}
 					onKeyDown={this.handlePillKeyDown}
+					title={selectedItem}
 				>
 					{/* eslint-enable no-script-url */}
 					{renderIcon}
