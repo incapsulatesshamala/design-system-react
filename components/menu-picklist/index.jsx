@@ -165,6 +165,10 @@ const MenuPicklist = createReactClass({
 		 * Initial selected item index.
 		 */
 		initValueIndex: PropTypes.number,
+		/**
+     * Initial selected item index.
+     */
+    selectedIndices: PropTypes.array,
 	},
 
 	getDefaultProps() {
@@ -183,7 +187,7 @@ const MenuPicklist = createReactClass({
 		return {
 			focusedIndex: this.props.initValueIndex ? this.props.initValueIndex : -1,
 			selectedIndex: this.props.initValueIndex ? this.props.initValueIndex : -1,
-			selectedIndices: [],
+			selectedIndices: !!(this.props.selectedIndices || []).length ? this.props.selectedIndices : [],
 			currentPillLabel: '',
 		};
 	},
