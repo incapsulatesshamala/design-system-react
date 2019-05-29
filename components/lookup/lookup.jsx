@@ -713,6 +713,7 @@ const Lookup = createReactClass({
 						this.pills[this.state.selectedIndex] = pill;
 					}}
 					onKeyDown={this.handlePillKeyDown}
+					title={selectedItem}
 				>
 					{/* eslint-enable no-script-url */}
 					{renderIcon}
